@@ -24,7 +24,7 @@
       <label class="form-label">Description</label>
       <textarea 
         name="description" 
-        class="form-control">@old('description')</textarea>
+        class="form-control">{{@old('description')}}</textarea>
     </div>
 
     <div class="mb-3">

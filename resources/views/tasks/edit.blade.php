@@ -25,7 +25,7 @@
       <label class="form-label">Description</label>
       <textarea 
         name="description" 
-        class="form-control">@old('description', $task->description)</textarea>
+        class="form-control">{{@old('description', $task->description)}}</textarea>
     </div>
 
     <div class="mb-3">

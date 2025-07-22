@@ -7,13 +7,33 @@
   </div>
 
   <div class="mb-3">
-    <select id="status-filter" class="form-select w-auto d-inline-block">
-      <option value="">All Statuses</option>
-      <option value="todo"       @selected($status=='todo')>To Do</option>
-      <option value="inprogress" @selected($status=='inprogress')>In Progress</option>
-      <option value="done"       @selected($status=='done')>Done</option>
-    </select>
-  </div>
+  <select id="status-filter" class="form-select w-auto d-inline-block">
+    <option value="" style="background-color: transparent; color: #000;">
+      All Statuses
+    </option>
+    <option 
+      value="todo" 
+      @selected($status=='todo') 
+      style="background-color: #ffc107; color: #212529;"
+    >
+      To Do
+    </option>
+    <option 
+      value="inprogress" 
+      @selected($status=='inprogress') 
+      style="background-color: #17a2b8; color: #fff;"
+    >
+      In Progress
+    </option>
+    <option 
+      value="done" 
+      @selected($status=='done') 
+      style="background-color: #28a745; color: #fff;"
+    >
+      Done
+    </option>
+  </select>
+</div>
 
   <table class="table table-bordered">
     <thead>
